@@ -3,8 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import Layout from '../components/Layout/Layout'
+
 const Home: NextPage = () => {
   return (
+    <Layout title="Home | Next.js + TypeScript Example">
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -65,7 +68,8 @@ const Home: NextPage = () => {
           </span>
         </a>
       </footer>
-    </div>
+      </div>
+      </Layout>
   )
 }
 
